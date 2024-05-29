@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="myForm" action="https://httpbin.org/anything" method="post">
+      <div class="closePopup">
+        <!--Stängning funkar ej pga ingen JavaScript-->
+        <p class="closePopupText">STÄNG</p>
+        <p class="closePopupX">&#x1F7A8;</p>
+        <!--Unicode för kryss eftersom ett vanlig 'x' är ojämn-->
+      </div>
+      <div>
+        <ul class="loginOption">
+          <!--I den riktiga webbsidan ska man kunna byta mellan inloggning och registreringssida-->
+          <li class="register">BLI MEDLEM</li>
+          <li class="login">LOGGA IN</li>
+        </ul>
+      </div>
+      <div class="myFormContent">
+        <div class="inputField">
+          <input
+            placeholder="E-postadress*"
+            type="text"
+            id="epostadress"
+            name="epostadress"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div class="inputField">
+          <!--Gråa undersidan visar att detta fält är ej obligatoriskt-->
+          <input
+            placeholder="Telefon"
+            type="text"
+            id="telefon"
+            name="telefon"
+          />
+        </div>
+        <div class="inputField">
+          <input
+            placeholder="Lösenord*"
+            type="password"
+            id="Lösenord"
+            name="Lösenord"
+            required
+            aria-required="true"
+          />
+          <div class="visaLösenord">
+            <button type="button">VISA LÖSENORDET</button>
+          </div>
+        </div>
+        <div class="checkboxRow">
+          <!--Den första checkrutan är obligatoriskt-->
+          <input
+            id="godkännaVillkor"
+            type="checkbox"
+            name="checkboxGodkännaVillkor"
+            required
+            aria-required="true"
+          />
+          <label for="godkännaVillkor">
+            Jag vill bli medlem i Club Lyko och godkänner de allmänna villkoren,
+            samt har tagit del av Lykos personuppgiftspolicy.
+          </label>
+        </div>
+        <div class="checkboxRow">
+          <input id="jaEpost" type="checkbox" name="checkboxJaEpost" />
+          <label for="jaEpost">
+            Ja tack, jag vill få erbjudanden via e-post.
+          </label>
+        </div>
+        <div class="checkboxRow">
+          <input id="jaSMS" type="checkbox" name="checkboxJaSMS" />
+          <label for="jaSMS"> Ja tack, jag vill få erbjudanden via sms. </label>
+        </div>
+        <div>
+          <button class="button" type="submit">BLI MEDLEM</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

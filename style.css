@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+
+  background-image: url(./asset/Bakgrund.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #696969;
+}
+
+.myForm {
+  margin: 10% auto 10% auto;
+}
+
+.closePopup {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: none;
+
+  padding: 0 2% 0 0;
+  margin: 0;
+  height: fit-content;
+
+  color: white;
+}
+.closePopupText {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+.closePopupX {
+  font-size: 48px;
+  margin: 0 0 0 0px;
+}
+
+.loginOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  /* background-color: #696969; */
+}
+.loginOption li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 80px;
+
+  font-size: large;
+  font-weight: 500;
+}
+.register {
+  background-color: white;
+}
+.login {
+  background-color: #e1e1e1;
+}
+
+.myFormContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+
+  padding: 40px;
+  width: 300px;
+  height: fit-content;
+
+  background-color: white;
+}
+
+.inputField {
+  /* background-color: #aff180; */
+  margin-bottom: 10px;
+  width: 100%;
+}
+.inputField input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 4px;
+
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+
+  border: 1px solid darkgray;
+  border-bottom: 3px solid #aff180;
+  border-radius: 2px;
+}
+
+#telefon {
+  border-bottom: 3px solid darkgray;
+}
+
+.visaLösenord {
+  display: flex;
+  justify-content: end;
+}
+.visaLösenord button {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  padding-right: 0;
+
+  font-family: "roboto-condensed", sans-serif;
+  font-size: 12px;
+  text-align: end;
+  text-transform: uppercase;
+}
+.visaLösenord button:hover {
+  text-decoration: underline;
+}
+
+.checkboxRow {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 5px;
+
+  /* background-color: #696969; */
+}
+.checkboxRow label {
+  font-size: 14px;
+}
+
+.button {
+  background-color: #696969;
+  color: #e1e1e1;
+  font-size: medium;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px 14px;
+}
